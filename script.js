@@ -26,20 +26,22 @@ var outerRadius = Math.min(width, height) / 2  - (mobileScreen ? 80 : 100),
 ////////////////////////// Data ////////////////////////////
 ////////////////////////////////////////////////////////////
 
-var Names = ["Functional","Non Functional","","Other","Roadmaps/Guidelines","Relevant Projects Outcomes","Standards",""];
+var Names = ["ePROs and DSS","Mindfulness","Empowerment","Social Platform", "","Physical","Psychological","Spiritual","Social",""];
 
 var respondents = 44, //Total number of respondents (i.e. the number that makes up the total group)
 	emptyPerc = 0.7, //What % of the circle should become empty
 	emptyStroke = Math.round(respondents*emptyPerc); 
 var matrix = [
-	[0, 0, 0, 2, 1, 3, 7, 0], //ePROs DSS
-	[0, 0, 0, 2, 4, 9, 16, 0], //Mindfulness
-	[0, 0, 0, 0, 0, 0,  0, emptyStroke], //Dummy stroke
-	[2, 2, 0, 0, 0, 0, 0, 0], //Empowerment
-	[1, 4, 0, 0, 0, 0, 0, 0], //Social Platform
-	[3, 9, 0, 0, 0, 0, 0, 0], //EU Projects
-	[7, 16, 0, 0, 0, 0, 0, 0], //ISO
-	[0,0,emptyStroke,0, 0, 0, 0, 0] //Dummy stroke
+	[0, 0, 0, 0, 0, 0, 0, 20, 20, 0], //ePROs DSS
+	[0, 0, 0, 0, 0, 0, 20, 15, 5, 0], //Mindfulness
+	[0, 0, 0, 0, 0, 5, 0, 15, 20, 0], //Empowerment
+	[0, 0, 0, 0, 0, 0, 20, 15, 5, 0], //Social
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, emptyStroke], //Dummy stroke
+	[0, 0, 5, 25, 0, 0, 0, 0, 0, 0], //Social
+	[0, 20, 0, 0, 0, 0, 0, 0, 0, 0], //Spiritual
+	[20, 15, 15, 5, 0, 0, 0, 0, 0, 0], //Psychological
+	[20, 5, 20, 0, 0, 0, 0, 0, 0, 0], //Physical
+	[0, 0, 0, 0, 0, emptyStroke, 0, 0, 0, 0] //Dummy stroke
 ];
 //Calculate how far the Chord Diagram needs to be rotated clockwise to make the dummy
 //invisible chord center vertically
@@ -144,14 +146,14 @@ titleWrapper.append("text")
 	.style("font-size", mobileScreen ? "12px" : "20px" )
 	.attr("x", (width/2.5+ margin.left - outerRadius - titleSeparate))
 	.attr("y", titleOffset)
-	.text("Information Sources");
+	.text("Palliative Needs");
 //Title top right
 titleWrapper.append("text")
 	.attr("class","title right")
 	.style("font-size", mobileScreen ? "12px" : "20px" )
 	.attr("x", (width/1.5 + margin.left + outerRadius + titleSeparate))
 	.attr("y", titleOffset)
-	.text("Goals");
+	.text("ENCOURAGE modules");
 ////////////////////////////////////////////////////////////
 ///////////////////////// Tooltip //////////////////////////
 ////////////////////////////////////////////////////////////
