@@ -1,0 +1,3 @@
+From nbremmer's blog on [How to create a Flow diagram with a circular Twist](http://www.visualcinnamon.com/2015/08/stretched-chord.html) in which the Chord Diagram is now officially a circular flow diagram and the chords have been sorted to reduce overlap.
+
+forked from <a href='http://bl.ocks.org/nbremer/'>nbremer</a>'s block: <a href='http://bl.ocks.org/nbremer/c11409af47b5950f0289'>Stretched Chord - The Final Result</a>
